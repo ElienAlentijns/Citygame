@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snap!"
+        android:id="@+id/takePicture"/>
+
+	<Button
+	    android:id="@+id/choosePicture"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/photo_holder"
+	    android:layout_alignParentRight="true"
+	    android:text="Choose!" />
+
+	<ImageView
+	    android:id="@+id/showPicture"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/takePicture"
+	    android:minHeight="100dip" />
+
+</RelativeLayout>

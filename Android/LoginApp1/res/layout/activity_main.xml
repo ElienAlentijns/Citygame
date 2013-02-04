@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="450px"
+            android:layout_height="450px"
+            android:src="@drawable/citygame" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtUsername"
+        android:layout_alignLeft="@+id/lblUsername"
+        android:layout_alignRight="@+id/txtUsername"
+        android:layout_below="@+id/imageView1"
+        android:scrollbars="vertical"
+        android:maxLines="20"
+        android:text="Welkom op de website van groep 1 omtrent City Game. Onze groep bestaat uit 9 studenten Toegepaste Informatica van het 3de jaar op de PHL. Verdeeld over de drie afstudeerrichtingen SNB, AON, SWM. Voor meer informatie over onze groep verwijzen we u graag door naar onze leden pagina. Het project is ontstaan door de vraag naar een vergelijkende studie tussen HTML5 en andere mobiele ontwikkelingsplatformen. De opdrachtgever TINFO heeft al een hele geschiedenis met games en simulaties en hierdoor zijn ze uitgekomen op het idee van een citygame." />
+    
+	<TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtPassword"
+        android:layout_alignLeft="@+id/lblPassword"
+        android:text="@string/gebruiker"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+	<EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblUsername"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+	<TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtPassword"
+        android:layout_toLeftOf="@+id/btnLogin"
+        android:text="@string/wachtwoord"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+    
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogin"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/lblPassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+    
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/inloggen" />
+    
+</LinearLayout>
+</ScrollView>

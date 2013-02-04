@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnJager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Jager" />
+
+    <Button
+        android:id="@+id/btnSendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtChatText"
+        android:layout_alignBottom="@+id/txtChatText"
+        android:layout_toRightOf="@+id/txtChatText"
+        android:text="@string/button" />
+
+    <EditText
+        android:id="@+id/txtChatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="34dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/lblChatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnJager"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="19dp"
+        android:maxLines="20"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnProoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblChatText"
+        android:layout_toRightOf="@+id/btnJager"
+        android:text="@string/prooi" />
+
+    <Button
+        android:id="@+id/btnSpelleider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblChatText"
+        android:layout_toRightOf="@+id/btnProoi"
+        android:text="@string/spelleider" />
+
+</RelativeLayout>
